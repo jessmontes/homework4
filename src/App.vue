@@ -5,7 +5,7 @@
   import AddTransaction from './components/AddTransaction.vue';
   import TransactionList from './components/TransactionList.vue';
 
-  import { ref, computed, onMounted} from 'vue'
+  import {ref, computed, onMounted} from 'vue'
 
   const transactions = ref([])
 
@@ -73,7 +73,7 @@ onMounted( () => {
     <Balance :total="sum"></Balance>
     <IncomeExpenses :income="moneyIn" :expense="moneyOut"></IncomeExpenses>
     <AddTransaction @transactionSubmitted="handleTransaction"></AddTransaction>
-    <TransactionList :transactions="transactions" @transactionDeleted=""handleDelete></TransactionList>
+    <TransactionList :transactions="transactions" @transactionDeleted="handleDelete"></TransactionList>
   </div>
 
 </template>

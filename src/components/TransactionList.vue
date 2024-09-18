@@ -11,7 +11,7 @@ const props= defineProps({
 const emit = defineEmits(['transactionDeleted'])
 
 const deleteTransaction = (id) => {
-    emit('transactionDeleted',id)
+    emit('transactionDeleted', id)
 }
 
 </script>

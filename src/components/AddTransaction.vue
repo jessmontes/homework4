@@ -1,5 +1,5 @@
 <script setup>
-    import { ref, defineEmits} from 'vue'
+    import {ref, defineEmits} from 'vue'
     const text = ref('')
     const amount = ref('')
 
@@ -13,7 +13,7 @@
             amount: parseFloat(amount.value),
         }
 
-        emit('transactionSumitted', transactionData)
+        emit('transactionSubmitted', transactionData)
 
         text.value =''
         amount.value =''
